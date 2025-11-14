@@ -51,26 +51,29 @@ src/
 
 Es el componente raíz. Contiene el estado global:
 
-search → texto de búsqueda
 
-category → categoría seleccionada
 
+----------------------------
+|search → texto de búsqueda|
+----------------------------
+|category → categoría seleccionada|
+-----------------------------------
 Filtra las reglas antes de enviarlas a RuleList.
-
- SearchBar.jsx
-
+----------------
+| SearchBar.jsx|
+----------------
 Componente controlado. Cada vez que el usuario escribe, se actualiza el estado en App.
-
- CategoryFilter.jsx
-
+---------------------
+ |CategoryFilter.jsx|
+---------------------
 Permite filtrar por categoría usando un <select>.
-
- RuleList.jsx
-
+-----------------
+ |RuleList.jsx|
+-----------------
 Recibe la lista de reglas filtradas y genera múltiples RuleCard.
-
- RuleCard.jsx
-
+----------------
+ |RuleCard.jsx|
+----------------
 Tarjeta individual con:
 
 Título
@@ -85,15 +88,10 @@ Estado local (useState)
 
  Flujo de datos (props y estado)
 
-El estado global vive en App.jsx
 
-Los componentes hijos reciben datos por props
-
-Cuando un usuario interactúa (busca, filtra, marca compliant), los componentes disparan eventos que actualizan el estado en App
-
-
-Diseño completamente responsivo
-
+-----------------------------------
+|Diseño completamente responsivo|
+-----------------------------------
 
  Pruebas y verificación
 
